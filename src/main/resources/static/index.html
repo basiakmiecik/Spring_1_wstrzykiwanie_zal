@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Add user</title>
+</head>
+<body>
+<form method="post" action="/add">
+    <div class="form-row">
+        <div class="col-md-2 mb-3">
+            <label for="imie">Imię</label>
+            <input type="text" class="form-control" name="imie"id="imie" placeholder="Imię" required>
+        </div>
+        <div class="col-md-2 mb-3">
+            <label for="nazwisko">Nazwisko</label>
+            <input type="text" class="form-control" name="nazwisko" id="nazwisko" placeholder="Nazwisko" required>
+        </div>
+        <div class="col-md-2 mb-3">
+            <label for="wiek">Wiek</label>
+            <input type="number" class="form-control" name ="wiek"id="wiek" placeholder="Wiek" required>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+</body>
+</html>
