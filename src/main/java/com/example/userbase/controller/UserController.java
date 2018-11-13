@@ -37,9 +37,7 @@ public class UserController {
 
     @PostMapping("/add")
     @RequestMapping(value="/add", method = RequestMethod.POST)
-    public String saveUser(@RequestParam String imie,
-                           @RequestParam String nazwisko,
-                           @RequestParam int wiek) {
+    public String saveUser(String imie, String nazwisko, int wiek) {
 
         if(imie.isEmpty() ||nazwisko.isEmpty()|| wiek <= 0) {
             //http://localhost:8080/add?imie=&nazwisko=Rayjko&wiek=30
